@@ -10,13 +10,13 @@ proportion = 100
 preload_model = False
 
 # pretrained model path
-pretrain_model_path = "trained_models/"
+pretrain_model_path = "trained_models/model.pth"
 
 # number of epochs to train
 num_epochs = 100
 
 # batch size for training
-batch_size = 66
+batch_size = 6 #66
 
 # hidden size for RNN
 hidden_size = 1500
