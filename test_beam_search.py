@@ -91,6 +91,7 @@ total_iou = 0
 for k in data_labels_paths.keys():
     Rs = 0.0
     for batch_idx in range(dataset_sizes[k][1] // config.batch_size):
+        print(batch_idx)
         data_, labels = next(test_gen_objs[k])
         data_ = data_[:, :, 0:config.top_k + 1, :, :, :]
         one_hot_labels = prepare_input_op(labels, len(generator.unique_draw))
